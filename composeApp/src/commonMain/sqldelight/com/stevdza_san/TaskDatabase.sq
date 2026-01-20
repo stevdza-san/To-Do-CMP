@@ -1,0 +1,43 @@
+CREATE TABLE TaskTable (
+    id TEXT NOT NULL PRIMARY KEY,
+    title TEXT NOT NULL,
+    description TEXT NOT NULL,
+    isCompleted INTEGER NOT NULL,
+    priority TEXT NOT NULL,
+    created_at INTEGER NOT NULL DEFAULT 0,
+    updated_at INTEGER NOT NULL DEFAULT 0
+);
+
+insertTask:
+INSERT INTO TaskTable (
+    id,
+    title,
+    description,
+    isCompleted,
+    priority,
+    created_at,
+    updated_at
+)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+updateTask:
+UPDATE TaskTable
+SET
+    title = ?,
+    description = ?,
+    isCompleted = ?,
+    priority = ?,
+    updated_at = ?
+WHERE id = ?;
+
+selectTaskById:
+SELECT * FROM TaskTable
+WHERE id = ?;
+
+selectAllTasks:
+SELECT * FROM TaskTable
+ORDER BY created_at DESC;
+
+deleteTaskById:
+DELETE FROM TaskTable
+WHERE id = ?;
