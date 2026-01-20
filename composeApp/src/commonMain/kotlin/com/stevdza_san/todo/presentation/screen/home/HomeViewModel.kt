@@ -2,16 +2,14 @@ package com.stevdza_san.todo.presentation.screen.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.stevdza_san.todo.data.ToDoRepository
 import com.stevdza_san.todo.domain.Priority
+import com.stevdza_san.todo.domain.ToDoRepository
 import com.stevdza_san.todo.domain.ToDoTask
 import com.stevdza_san.todo.util.RequestState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
-import kotlinx.coroutines.flow.debounce
-import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.stateIn
 
 class HomeViewModel(

@@ -1,6 +1,6 @@
 package com.stevdza_san.todo.di
 
-import com.stevdza_san.todo.data.ToDoRepository
+import com.stevdza_san.todo.domain.ToDoRepository
 import com.stevdza_san.todo.data.ToDoRepositoryImpl
 import com.stevdza_san.todo.navigation.Navigator
 import com.stevdza_san.todo.presentation.screen.home.HomeViewModel

@@ -4,7 +4,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
-import com.stevdza_san.todo.data.ToDoRepository
+import com.stevdza_san.todo.domain.ToDoRepository
 import com.stevdza_san.todo.domain.Priority
 import com.stevdza_san.todo.domain.ToDoTask
 import kotlin.uuid.ExperimentalUuidApi

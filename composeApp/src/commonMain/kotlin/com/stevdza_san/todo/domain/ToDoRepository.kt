@@ -1,6 +1,5 @@
-package com.stevdza_san.todo.data
+package com.stevdza_san.todo.domain
 
-import com.stevdza_san.todo.domain.ToDoTask
 import com.stevdza_san.todo.util.RequestState
 import kotlinx.coroutines.flow.Flow
 import kotlin.coroutines.CoroutineContext
